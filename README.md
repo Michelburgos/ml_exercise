@@ -94,7 +94,7 @@ Estas métricas fueron elegidas para:
 XGBoost fue seleccionado como el modelo preferido debido a su rendimiento superior en todas las métricas evaluadas, con un F1-Score de 0.8643, exactitud de 85.86%, precisión de 0.8971 y recall de 0.8339, superando a los otros modelos. Este modelo destaca por su capacidad para manejar datos estructurados como los de MercadoLibre, que incluyen una mezcla de características numéricas, categóricas y derivadas. 
 
 ### Características Más Relevantes
-Importancia de características desde XGBoost, basada en la gráfica actualizada:
+Importancia de características desde XGBoost:
 | Característica                     | Importancia |
 |------------------------------------|-------------|
 | `initial_quantity`                 | 0.369       |
@@ -123,18 +123,7 @@ Importancia de características desde XGBoost, basada en la gráfica actualizada
 - **Rendimiento del Modelo**: XGBoost logró el mejor rendimiento (F1-Score: 0.8643), lo que lo hace ideal para clasificar condiciones de artículos debido a su capacidad para manejar relaciones complejas.
 - **Importancia de Características**: `initial_quantity` y `listing_listing_type_id_free` son los principales impulsores, destacando la importancia de las características del listado. Otras como `buying_buying_mode_buy_it_now`, `sold_quantity` y `free_shipping` también contribuyen significativamente.
 - **Implicaciones Prácticas**: El modelo XGBoost puede automatizar la clasificación de condiciones en MercadoLibre, mejorando la eficiencia de la plataforma. Los vendedores pueden optimizar listados (e.g., cantidad, opciones de envío) para aclarar la condición del artículo.
-- **Limitaciones**:
-  - Los hiperparámetros predeterminados pueden no ser óptimos.
-  - Características eliminadas como `warranty` y texto de `title` podrían proporcionar más información con procesamiento avanzado (e.g., NLP).
-  - El modelo es específico de MercadoLibre Argentina y puede requerir retrainamiento para otros contextos.
 - **Adecuación de Métricas**: La combinación de exactitud, precisión, recall y F1-Score proporcionó una evaluación integral, con F1-Score balanceando efectivamente precisión y recall.
-
-## Próximos Pasos
-1. **Ajuste de Hiperparámetros**: Optimizar XGBoost, Random Forest y Gradient Boosting usando búsqueda en cuadrícula o aleatoria.
-2. **Ingeniería de Características**: Incorporar análisis de texto para `title` o `warranty` y explorar interacciones entre características.
-3. **Validación Cruzada**: Usar validación cruzada k-fold para estimaciones robustas de rendimiento.
-4. **Selección de Características**: Eliminar características de baja importancia para reducir complejidad.
-5. **Despliegue del Modelo**: Integrar el modelo XGBoost en la plataforma de MercadoLibre para clasificación en tiempo real.
 
 ## Cómo Usar
 1. **Requisitos**: Instalar dependencias (`pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `xgboost`).
