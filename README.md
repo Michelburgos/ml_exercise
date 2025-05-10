@@ -137,3 +137,8 @@ Importancia de características desde XGBoost:
 5. **Salidas**:
    - **EDA**: `clean_dataset.csv` y visualizaciones de distribuciones de datos.
    - **Entrenamiento de Modelos**: Tabla de métricas de rendimiento y una gráfica de barras de las 10 características más importantes para XGBoost.
+
+## Autor
+
+**Michel Dahiana Burgos Santos**  
+Ejercicio académico de Ingeniería de Datos e Inteligencia Artificial
