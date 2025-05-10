@@ -91,7 +91,7 @@ Estas métricas fueron elegidas para:
 - La alta precisión de XGBoost minimiza falsos positivos, y su recall asegura buena cobertura de artículos nuevos.
 
 #### Razón para Escoger XGBoost
-XGBoost fue seleccionado como el modelo preferido debido a su rendimiento superior en todas las métricas evaluadas, con un F1-Score de 0.8643, exactitud de 85.86%, precisión de 0.8971 y recall de 0.8339, superando a los otros modelos. Este modelo destaca por su capacidad para manejar datos estructurados como los de MercadoLibre, que incluyen una mezcla de características numéricas, categóricas y derivadas. XGBoost captura relaciones no lineales y complejas entre las variables, ofrece eficiencia computacional gracias a optimizaciones como el manejo de datos dispersos y el paralelismo, y es robusto frente al sobreajuste mediante técnicas como la regularización L1 y L2. Además, proporciona herramientas para interpretar la importancia de las características, lo cual es crucial para entender los factores que más influyen en la predicción de la `condición` de los artículos, como se analiza a continuación.
+XGBoost fue seleccionado como el modelo preferido debido a su rendimiento superior en todas las métricas evaluadas, con un F1-Score de 0.8643, exactitud de 85.86%, precisión de 0.8971 y recall de 0.8339, superando a los otros modelos. Este modelo destaca por su capacidad para manejar datos estructurados como los de MercadoLibre, que incluyen una mezcla de características numéricas, categóricas y derivadas. 
 
 ### Características Más Relevantes
 Importancia de características desde XGBoost, basada en la gráfica actualizada:
